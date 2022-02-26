@@ -26,7 +26,7 @@ function loadPosts() {
 function displayUsers(data){
     const ul = document.getElementById('users');
     for(const user of data){
-        const li = document.createElement('li');
+        const li = document.createElement('div');
         li.innerText = `names: ${user.name} & username: ${user.username}`;
         ul.appendChild(li);
     }
