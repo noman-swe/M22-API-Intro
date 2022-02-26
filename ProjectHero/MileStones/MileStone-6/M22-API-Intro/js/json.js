@@ -24,3 +24,8 @@ console.log(shopStringify);
 // stringify k abr normal javascript object e change kora jay
 const converted = JSON.parse(shopStringify);
 console.log(converted.owner);
+
+//  -------------------->
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json));
