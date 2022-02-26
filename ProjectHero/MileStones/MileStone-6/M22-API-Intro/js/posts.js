@@ -20,7 +20,7 @@ function displayPosts(posts) {
 
 
 // post[]
-function addAPost(){
+function addAPost() {
     fetch('https://jsonplaceholder.typicode.com/posts'), {
         method: 'POST',
         body: JSON.stringify({
@@ -28,12 +28,11 @@ function addAPost(){
             body: 'This is my posts',
             userId: 1
         }),
-        headers:{
+        headers: {
             'Content-type': 'application/json; chaset=UTF-8'
         }
-        .then(response => response.json())
-        .then(data => console.log(data) )
-
     }
-    
+        .then(res => res.json())
+        .then(data => console.log(data))
+
 }
