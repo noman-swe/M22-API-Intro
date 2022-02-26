@@ -24,7 +24,10 @@ function loadPosts() {
 // loadPosts()
 
 function displayUsers(data){
-    for(const element of data){
-        console.log(element.name);
+    const ul = document.getElementById('users');
+    for(const user of data){
+        const li = document.createElement('li');
+        li.innerText = `names: ${user.name} & username: ${user.username}`;
+        ul.appendChild(li);
     }
 }
