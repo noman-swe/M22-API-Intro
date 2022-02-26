@@ -19,7 +19,7 @@ function displayPosts(posts) {
 }
 
 
-// post[]
+// post[] ******prb
 function addAPost() {
     fetch('https://jsonplaceholder.typicode.com/posts'), {
         method: 'POST',
